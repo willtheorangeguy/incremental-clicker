@@ -63,6 +63,33 @@ class TestClickerApp(unittest.TestCase):
         self.app.increment()  # 2
         self.assertEqual(self.app.count.get(), 2)
 
+    def test_plus_button_click(self):
+        """Test that clicking the plus button increments the count."""
+        self.app.plus_button.invoke()
+        self.assertEqual(self.app.count.get(), 1)
+
+    def test_minus_button_click(self):
+        """Test that clicking the minus button decrements the count."""
+        self.app.count.set(5)
+        self.app.minus_button.invoke()
+        self.assertEqual(self.app.count.get(), 4)
+
+    def test_reset_button_click(self):
+        """Test that clicking the reset button resets the count."""
+        self.app.count.set(10)
+        self.app.reset_button.invoke()
+        self.assertEqual(self.app.count.get(), 0)
+
+    def test_button_click_sequence(self):
+        """Test a sequence of button clicks."""
+        self.app.plus_button.invoke()  # 1
+        self.app.plus_button.invoke()  # 2
+        self.app.minus_button.invoke() # 1
+        self.app.plus_button.invoke()  # 2
+        self.assertEqual(self.app.count.get(), 2)
+        self.app.reset_button.invoke() # 0
+        self.assertEqual(self.app.count.get(), 0)
+
 
 if __name__ == '__main__':
     unittest.main()
