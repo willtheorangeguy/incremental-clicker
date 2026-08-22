@@ -2,7 +2,7 @@
 
 ## The whole application
 
-```
+```text
 clicker.py        41 lines — the window and the counter
 test_clicker.py   95 lines — tests for the counter logic
 ```

@@ -7,12 +7,11 @@ licensing decision rather than a documentation one.
 Ordered by severity. See [`docs/roadmap.md`](../roadmap.md) for the narrative version,
 which also covers deliberate non-goals.
 
-
 **2 open:** 1 medium, 1 low.
 
 ## 1. 25 MB of build output is tracked despite .gitignore already excluding it
 
-**Severity:** Medium  
+**Severity:** Medium
 **Where:** `build/` (17 files), `dist/clicker.exe`
 
 **What:** `.gitignore` lists both `build/` and `dist/`, but 18 files under them are still tracked — PyInstaller intermediates (`Analysis-00.toc`, `PYZ-00.pyz`, `base_library.zip`, tree manifests) totalling ~14 MB, plus an ~11 MB `clicker.exe`.
@@ -23,7 +22,7 @@ which also covers deliberate non-goals.
 
 ## 2. The README was a single sentence
 
-**Severity:** Low  
+**Severity:** Low
 **Where:** `README.md`
 
 **What:** Two lines including the heading.
@@ -31,7 +30,6 @@ which also covers deliberate non-goals.
 **Why it matters:** Nothing described how to run it, that a prebuilt executable exists, or that the window is always-on-top by design.
 
 **Suggested fix:** Addressed by the documentation added in this sweep.
-
 
 ---
 

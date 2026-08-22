@@ -3,7 +3,7 @@
 A 41-line tkinter counter that stays above every other window. There is not much to it, which
 is the point.
 
-```
+```text
 incremental-clicker/
 ├── docs/
 │   ├── README.md          this page

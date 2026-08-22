@@ -51,7 +51,7 @@ Click to count. The window floats above everything else until you close it.
 
 ## Documentation
 
-Full documentation lives in [`docs/`](docs/README.md):
+Full documentation lives in [`docs/`](docs/index.md):
 [Quickstart](docs/quickstart.md) · [Installation](docs/installation.md) · [Usage](docs/usage.md) · [Architecture](docs/architecture.md) · [Development](docs/development.md) · [FAQ](docs/faq.md) · [Troubleshooting](docs/troubleshooting.md) · [Roadmap](docs/roadmap.md)
 
 ## Support

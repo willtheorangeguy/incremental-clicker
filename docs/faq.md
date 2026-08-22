@@ -10,7 +10,7 @@ program is scoped to a single session.
 That is the point. A counter you have to alt-tab to is worse than a piece of paper, because
 switching windows is exactly when you lose count.
 
-## It is not staying on top.
+## It is not staying on top
 
 Always-on-top is a **hint** to the window manager, not a guarantee. Some Linux window managers
 override or ignore it, and some full-screen applications take priority regardless. See
